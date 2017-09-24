@@ -2,7 +2,7 @@
  * @Author: chenzhizhuo
  * @Date:   2017-09-17 15:36:08
  * @Last Modified by:   chenzhizhuo
- * @Last Modified time: 2017-09-17 15:43:11
+ * @Last Modified time: 2017-09-23 21:57:51
  */
 let nextTodoId = 0
 
@@ -10,7 +10,7 @@ let nextTodoId = 0
 export const addTodo = (text) => {
 	return {
 		type: "ADD_TODO",
-		id: nextTodoId,
+		id: nextTodoId++,
 		text
 	}
 }
@@ -18,7 +18,7 @@ export const addTodo = (text) => {
 //过滤切换已处理/未处理 代办项数据
 export const setVisibility = (filter) => {
 	return {
-		type: "SET_VISIBILITY",
+		type: "SET_VISIBILITY_FILTER",
 		filter
 	}
 }

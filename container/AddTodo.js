@@ -2,9 +2,9 @@
  * @Author: chenzhizhuo
  * @Date:   2017-09-17 16:25:04
  * @Last Modified by:   chenzhizhuo
- * @Last Modified time: 2017-09-17 19:38:50
+ * @Last Modified time: 2017-09-24 11:36:10
  */
-
+import React from 'react'
 import {
 	connect
 } from 'react-redux'
@@ -18,8 +18,8 @@ let AddTodo = ({
 	let input;
 	return (
 		<div>
-             <from onSubmit ={
-             	e =>｛
+             <form onSubmit ={
+             	e =>{
 　　　　　　　　　　e.preventDefault()
 					if(!input.value.trim()){return}
 					dispatch(addTodo(input.value))
@@ -29,7 +29,7 @@ let AddTodo = ({
                  <button type="submit">
                     Add Todo
                  </button>
-             </from>
+             </form>
         </div>
 	)
 }

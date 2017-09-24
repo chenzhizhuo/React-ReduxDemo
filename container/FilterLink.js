@@ -2,7 +2,7 @@
  * @Author: chenzhizhuo
  * @Date:   2017-09-17 16:56:44
  * @Last Modified by:   chenzhizhuo
- * @Last Modified time: 2017-09-17 17:00:33
+ * @Last Modified time: 2017-09-23 22:08:36
  */
 import {
 	connect
@@ -10,7 +10,7 @@ import {
 import Link from "../components/Link"
 import {
 	setVisibility
-} from "../actins"
+} from "../actions"
 
 const mapStateToProps = (state, ownProps) => {
 	return {
@@ -30,3 +30,5 @@ const FilterLink = connect(
 	mapStateToProps,
 	mapDispatchToProps
 )(Link)
+
+export default FilterLink
